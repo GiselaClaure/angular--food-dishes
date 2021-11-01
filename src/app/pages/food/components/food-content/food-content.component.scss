@@ -1,0 +1,71 @@
+div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h1{
+        display: flex;
+        justify-content: center;
+        padding-top: 19px;
+        color:rgba(46, 18, 18, 0.815)
+    
+    }
+}
+
+.dish_page{
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 62px;
+}
+.dish-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 350px;
+    margin-top: 30px; 
+    object-fit: cover;
+    padding: 20px;
+    border: solid 4px #62181194;
+    border-radius: 5px;
+    /* background-image: url("https://st2.depositphotos.com/5008023/11495/i/600/depositphotos_114952660-stock-photo-old-dark-background.jpg"); */
+    background-size: cover;
+    p{
+        padding: 5px;
+    }
+}
+.dish_title{
+    display: flex;
+    text-align: center;
+    padding-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    color: #5f1913dc;
+    text-transform: uppercase;
+}
+.dish_img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    min-height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.527), 0 2px 3px rgba(255, 253, 253, 0.561);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    
+}
+.dish-card :hover.dish_img{
+    filter: brightness(90%);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity:1;
+}

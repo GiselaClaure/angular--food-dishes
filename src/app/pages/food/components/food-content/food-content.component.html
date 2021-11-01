@@ -1,0 +1,12 @@
+<div>
+<h1>PLATOS TÍPICOS DE PERÚ</h1>
+<div class="dish_page" *ngIf="foodList">
+
+<div *ngFor="let dish of foodList" class="dish-card">
+    <h1 class="dish_title"> {{dish.name}} </h1>
+    <img class="dish_img" src="{{dish.photo}}" alt="{{dish.name}}">
+    <p> Tipo: {{dish.type}} </p>
+    <p>{{dish.description}}</p>
+</div>
+</div>
+</div>
