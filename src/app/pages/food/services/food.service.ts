@@ -5,11 +5,11 @@ import { HttpClient} from "@angular/common/http"
   providedIn: 'root'
 })
 export class FoodService {
-  public MYURL:string = "http://localhost:3000";
+  public MYURL:string = "https://food-api-ruby.vercel.app";
   public FOODURL:string = `${this.MYURL}/dishes`;
   constructor(private httpClient : HttpClient ) {}
 
   public getAllDishes() {
-    return this.httpClient.get("http://localhost:3000/dishes")
+    return this.httpClient.get(this.FOODURL)
   }
 }
